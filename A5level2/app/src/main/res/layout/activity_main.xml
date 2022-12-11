@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/img_main_head"
+    android:layout_width="155dp"
+    android:layout_height="300dp"
+    android:src="@drawable/cqupt"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.141"
+    tools:ignore="MissingConstraints" />
+
+<EditText
+    android:id="@+id/et_main_username"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:hint="账号"
+    android:inputType="number"
+    android:lines="1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteY="406dp"></EditText>
+
+<EditText
+    android:id="@+id/et_main_password"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:digits="0123456789"
+    android:hint="密码"
+    android:inputType="textPassword"
+    android:lines="1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/et_main_username"
+    tools:ignore="MissingConstraints"></EditText>
+
+<Button
+    android:id="@+id/btn_main_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="64dp"
+    android:text="登录"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/et_main_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
